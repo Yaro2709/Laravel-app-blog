@@ -1,5 +1,7 @@
-<x-app-layout>
-
+<x-app-layout
+    meta-title="NameBlog"
+    meta-description="DescriptionBlog"
+>
     <div class="container mx-auto flex flex-wrap py-6">
 
         <!-- Post Section -->

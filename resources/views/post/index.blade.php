@@ -3,8 +3,8 @@
 ?>
 <!-- Posts Section -->
 <x-app-layout
-    meta-title="NameBlog"
-    meta-description="DescriptionBlog"
+    :meta-title="'NameBlog - ' . $category->title"
+    :meta-description="'Posts filtered by category ' . $category->title"
 >
     <section class="w-full md:w-2/3 flex flex-col items-center px-3">
 
