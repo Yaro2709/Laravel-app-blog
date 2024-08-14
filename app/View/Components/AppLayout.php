@@ -28,6 +28,6 @@ class AppLayout extends Component
             ->limit(5)
             ->get();
 
-        return view('layout.app', compact('categories'));
+        return view('layouts.app', compact('categories'));
     }
 }
