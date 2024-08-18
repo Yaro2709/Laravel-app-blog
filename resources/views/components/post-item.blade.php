@@ -1,7 +1,7 @@
 <article class="bg-white flex flex-col shadow my-4">
     <!-- Article Image -->
     <a href="{{route('view', $post)}}" class="hover:opacity-75">
-        <img src="{{$post->getThumbnail()}}">
+        <img src="{{$post->getThumbnail()}}" alt="{{$post->title}}" class="aspect-[4/3] object-contain">
     </a>
 
     <div class="bg-white flex flex-col justify-start p-6">
@@ -24,6 +24,9 @@
         <a href="{{route('view', $post)}}" class="pb-6">
             {{$post->shortBody()}}
         </a>
-        <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+        <a  href="{{route('view', $post)}}" class="uppercase text-gray-800 hover:text-black">
+            Continue Reading
+            <i class="fas fa-arrow-right"></i>
+        </a>
     </div>
 </article>
