@@ -76,7 +76,8 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\IconColumn::make('active')
-                    ->boolean(),
+                    ->boolean()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('published_at')
                     ->dateTime()
                     ->sortable(),
